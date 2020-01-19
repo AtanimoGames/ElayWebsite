@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Page Title</title>
+	</head>
+	<body>
+	
+	
+	
+	<form action="actionGet.php" method="get">
+  Name: <input type="text" name="name" /><br /><br />
+  Age: <input type="text" name="age" /><br /><br />
+  <input type="submit" name="submit" value="Submit" />
+</form>
+	
+	
+	
+	</body>
+</html>
+
+
+<?php
+echo "Hi ".$_GET['name'].". ";
+echo "You are ".$_GET['age']." years old.";
+?>
